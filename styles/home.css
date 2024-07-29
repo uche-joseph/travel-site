@@ -1,0 +1,1000 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px #222;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .nav-menu {
+    display: none;
+}
+
+header .consultation-button {
+    display: none;
+    background-color: #321d68;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    color: #321d68;
+}
+
+.logo-img {
+  width: 90px;
+  padding-top: 10px;
+}
+
+.logo-img2 {
+  width: 100px;
+  padding: 20px 80px;
+}
+
+#mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    z-index: 1001;
+    padding: 50px 0;
+}
+
+.mobile-nav-btn {
+  padding: 17px;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: #321d68;
+  margin-top: 15px;
+  border: 1px solid #321d68;
+  color: #fff;
+  width: 100%;
+}
+
+
+#close-menu {
+  font-size: 20px;
+  display: flex;
+  width: 85%;
+  justify-content: flex-end;
+}
+
+#mobile-nav a {
+    display: block;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    padding: 20px 80px;
+}
+
+#mobile-nav a:hover {
+  background-color: #321d68;
+  color: white;
+}
+
+.background-container {
+    width: 100%;
+    height:80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+    z-index: 1;
+}
+
+.background-logo {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.quote {
+    position: absolute;
+    bottom: 75px;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    z-index: 2;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.second-section {
+    background-color: white;
+    margin: 0px;
+    padding: 20px 10px;
+}
+
+#short-statement {
+  padding: 25px;
+  background-color: #321d68;
+  border-radius: 3px;
+}
+
+#st-image {
+  display: none;
+}
+
+#short-statement h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+   font-style: normal;
+}
+
+#short-statement p,
+#short-statement ul {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  margin: 30px 0;
+}
+
+#short-statement li {
+  padding: 10px 0;
+  color: #fff;
+}
+
+#short-btn {
+  padding: 15px;
+  background-color: #bf2a55;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #bf2a55;
+  font-weight: bold;
+}
+
+#package-selection {
+  margin-top: -70px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+  padding: 20px 20px 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #111111;
+}
+
+#package-selection h2 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+}
+
+#dropdown-display {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #ccc;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
+
+.show .dropdown-menu {
+  display: block;
+}
+
+#package-selection button {
+  width: 100%;
+  background-color: #321d68;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 13px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #321d68;
+  margin-top: 15px;
+}
+
+#third-section {
+  background-color: white;
+  margin: 25px;
+  padding: 10px 0;
+}
+
+#third-section h2 {
+  color: #321d68;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#services {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  margin: 25px 0;
+}
+
+#education-service,
+#visa-service,
+#tour-service {
+  border-bottom: 1px solid #321d68;
+  padding: 5px 20px 40px 20px;
+}
+
+#education-service h3,
+#visa-service h3,
+#tour-service h3 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #321d68;
+  font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#education-service p,
+#visa-service p, 
+#tour-service p {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 20px 0;
+}
+
+#education-service button,
+#visa-service button,
+#tour-service button{
+  padding: 15px;
+  background-color: #321d68;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid #321d68;
+}
+
+#testimonial-section {
+  max-width: 100%;
+  margin: 0 25px 45px 25px;
+}
+
+#testimonial-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #321d68;
+  font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#testimonial-box {
+  box-shadow: 0 0 10px #222;
+  padding: 10px 0;
+}
+
+#testimonial-box2 {
+  display: none;
+}
+
+#testimonial-section p {
+  font-size: 15px;
+}
+
+#testimonial-section h3 {
+  font-size: 20px;
+}
+
+.testimonials {
+  display: none;
+  text-align: center;
+}
+
+.testimonial-img {
+  width: 70px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 7px 0;
+}
+
+#dots {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #321d68;
+}
+
+#faq {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  background: #b1aac5;
+}
+
+#faq h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #321d68;
+  font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: #321d68;
+  color: #fff;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.footer {
+  background-color: #321d68;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.footer-section p i {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .background-logo {
+    top: 40px;
+}
+
+header {
+  padding: 8px 35px;
+}
+
+.quote {
+  font-size: 33px;
+}
+
+.logo-img {
+  width: 120px;
+  padding-top: 10px;
+}
+
+header .mobile-menu-icon {
+  font-size: 23px;
+}
+
+#mobile-nav a {
+    font-size: 25px;
+}
+
+#package-selection {
+  margin-top: -70px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px 30px 20px;
+  width: 80%;
+}
+
+#package-selection h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#dropdown-display {
+  padding: 15px;
+}
+
+.dropdown-menu li {
+  padding: 15px;
+  font-size: 23px;
+}
+
+#selected-option {
+  font-size: 23px;
+}
+
+#package-selection button {
+  font-size: 20px;
+  padding: 15px;
+}
+
+#short-statement {
+ padding: 35px;
+}
+
+#short-statement h2 {
+  font-size: 30px;
+}
+
+#short-statement p,
+#short-statement ul {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#short-btn {
+  font-size: 20px;
+}
+
+#third-section {
+  margin: 0px 35px;
+}
+
+#third-section h2 {
+  font-size: 30px;
+}
+
+#education-service h3,
+#visa-service h3,
+#tour-service h3 {
+  font-size: 22px;
+}
+
+#education-service p,
+#visa-service p, 
+#tour-service p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#education-service button,
+#visa-service button, 
+#tour-service button {
+  font-size: 17px;
+}
+
+
+#testimonial-section {
+  margin: 0 35px;
+}
+
+#testimonial-section h2 {
+  font-size: 30px;
+}
+
+#testimonial-box {
+  padding: 15px 0;
+}
+
+#testimonial-section p {
+  font-size: 20px;
+}
+
+#testimonial-section h3 {
+  font-size: 22px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#faq {
+  max-width: 100%;
+}
+
+#faq h2 {
+  font-size: 30px;
+}
+
+
+.faq-question {
+  font-size: 20px;
+}
+
+.faq-answer {
+  font-size: 20px;
+}
+
+.footer-section h2 {
+  font-size: 23px;
+}
+
+.footer-section p {
+  font-size: 18px;
+}
+
+.footer-section p i {
+  font-size: 18px;
+}
+
+.footer-bottom p {
+  font-size: 18px;
+}
+
+}
+
+@media (min-width: 768px) {
+  .logo-img2 {
+    width: 150px;
+  }
+  
+  #close-menu {
+    font-size: 25px;
+    width: 80%;
+  }
+
+  .mobile-nav-btn {
+    font-size: 24px;
+  }
+  
+  
+  #package-selection {
+  padding: 30px 20px 40px 20px;
+  width: 70%;
+}
+
+#package-selection h2 {
+  font-size: 30px;
+  margin-bottom: 22px;
+}
+
+#dropdown-display {
+  padding: 10px;
+}
+
+.dropdown-menu li {
+  font-size: 26px;
+}
+
+
+#selected-option,
+.fa-chevron-down {
+  font-size: 26px;
+}
+
+#short-statement {
+  max-width: 85%;
+  margin: auto;
+}
+
+#short-statement p,
+#short-statement ul {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+#short-btn {
+  font-size: 22px;
+}
+
+
+#third-section {
+  max-width: 85%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+#education-service h3,
+#visa-service h3,
+#tour-service h3 {
+  font-size: 25px;
+}
+
+#education-service p,
+#visa-service p, 
+#tour-service p {
+  font-size: 23px;
+  line-height: 30px;
+}
+
+#education-service button,
+#visa-service button, 
+#tour-service button {
+  font-size: 22px;
+}
+
+
+#package-selection button {
+  font-size: 22px;
+  padding: 17px;
+}
+
+#testimonial-section {
+  max-width: 85%;
+  margin: auto;
+  padding-bottom: 80px;
+}
+
+#faq {
+  max-width: 100%;
+  margin: auto;
+  padding: 30px 40px;
+}
+
+#faq button,
+#faq p {
+  font-size: 25px;
+}
+
+.faq-question {
+  padding: 20px;
+}
+    
+     .footer-container {
+      display: flex;
+      flex-direction: row;
+      max-width: 90%;
+      margin: auto;
+  }
+  
+  .footer-section h2 {
+  font-size: 25px;
+}
+
+.footer-section p {
+  font-size: 23px;
+}
+
+.footer-section p i {
+  font-size: 23px;
+}
+
+.footer-bottom p {
+  font-size: 23px;
+}
+}
+
+
+@media (min-width: 1000px) {
+  header {
+    background: #fff;
+    top: 0;
+    border: none;
+    position: fixed;
+    padding-left: 40px;
+    padding-right: 50px;
+  }
+  
+  header .nav-menu {
+      display: flex;
+  }
+
+  header .nav-menu a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #222;
+      font-size: 22px;
+  }
+
+  header .nav-menu a:hover {
+    background-color: #321d68;
+    color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+
+  header .consultation-button {
+      display: block;
+      font-size: 22px;
+      border-radius: 5px;
+  }
+
+  header .mobile-menu-icon {
+      display: none;
+  }
+  
+  .background-logo {
+    display: none;
+  }
+
+  #package-selection {
+    width:50%;
+    margin-bottom: 50px;
+  }
+  
+  .background-container {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quote {
+  position: static;
+  font-size: 50px;
+  padding: 0 50px;
+}
+
+#short-statement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 55px 30px 55px;
+  margin: auto;
+  max-width: 70%;
+  background-color: #fff;
+}
+
+
+#short-statement h2 {
+text-align: left;
+font-size: 35px;
+color: black;
+}
+
+#st-text {
+  padding-right: 100px;
+  width: 50%;
+}
+
+#st-image {
+  display: block;
+  height: 500px;
+  width: 65%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+#short-statement p {
+font-size: 23px;
+color: black;
+}
+
+#short-btn {
+  background-color: #321d68;
+  border: 1px solid #321d68;
+}
+
+
+#third-section {
+padding: 80px 45px 80px 45px;
+margin: auto;
+max-width: 70%;
+}
+
+#services {
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 40px;
+}
+
+
+#third-section h2 {
+font-size: 35px;
+}
+
+#education-service ,
+#visa-service ,
+#tour-service  {
+border: none;
+box-shadow: 0 0 5px #222;
+}
+
+#education-service h3,
+#visa-service h3,
+#tour-service h3 {
+font-size: 25px;
+}
+
+#education-service p,
+#visa-service p, 
+#tour-service p {
+font-size: 23px;
+}
+
+#education-service button,
+#visa-service button,
+#tour-service button{
+font-size: 20px;
+}
+
+#short-btn {
+  font-size: 20px;
+}
+
+#testimonial-section {
+padding: 20px 45px;
+margin: auto;
+max-width: 70%;
+}
+
+#testimonial-section h2 {
+font-size: 35px;
+}
+
+#testimonial-box {
+display: none;
+}
+
+#testimonial-box2 {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 20px;
+}
+
+.testimonials-2 {
+box-shadow: 0 0 2px #444;
+padding: 10px;
+}
+
+#faq {
+  padding: 60px 45px;
+  margin: auto;
+  max-width: 70%;
+  }
+  
+  .footer-section {
+    flex: 1 1 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #package-selection {
+    width: 60%;
+  }
+}

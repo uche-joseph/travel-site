@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Amy Travels</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="logo"><img src="images/logo.jpg" class="logo-img"></div>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="pages/services.html">Services</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
+        </nav>
+        <a href="#package-selection"><button class="consultation-button">Get a Free Consultation</button></a>
+        <div class="mobile-menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+      <span id="m-nav-span">
+       <i class="fas fa-multiply" id="close-menu"></i>
+       <img src="images/logo.jpg" class="logo-img2">
+        <a href="index.html">Home</a>
+        <a href="pages/services.html">Services</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="#package-selection"><button class="consultation-button mobile-nav-btn">Get a Free Consultation</button></a>
+        </span>
+    </div>
+
+    <div class="background-container" id="background-container">
+        <div class="quote" id="quote"></div>
+    </div>
+
+    <div class="second-section">
+  <div id="package-selection">
+    <h2>Get a free consultation today. What do you need help with?</h2>
+    <div id="dropdown-display">
+      <span id="selected-option">Click to Select</span>
+      <span><i class="fas fa-chevron-down"></i></span>
+      <ul class="dropdown-menu" id="dd-menu">
+        <li data-link="pages/questionnaire.html?id=1">Visa Application</li>
+        <li data-link="pages/questionnaire.html?id=2">Educational Services (study abroad)</li>
+        <li data-link="pages/questionnaire.html?id=3">Tour Packages</li>
+      </ul>
+    </div>
+    <a href=""><button id="get-started-btn">Get Started Now</button></a>
+  </div>
+</div>
+
+
+        <div id="short-statement">
+          <div id="st-text">
+          <h2>Plan Your Dream Trip with Amy Travels Limited Experts</h2>
+          <p> Amy Travels Limited specializes in making your trip easy and unforgettable, from handling visas and study abroad programs to planning luxury, adventure, and family vacations.</p>
+          <p>Make your travel dreams come true. Contact us today for a free consultation!</p>
+          <a href="#package-selection" ><button id="short-btn">GET STARTED NOW</button></a>
+          </div>
+          <div id="st-image">
+            <img src="images/image15.jpg">
+          </div>
+        </div>
+
+    
+    <div id="third-section">
+      <h2>What We Offer</h2>
+      <div id="services">
+        <div id="education-service">
+          <h3>Educational Services</h3>
+          <p>Expand your horizons with expert guidance: study abroad, explore new cultures, and secure your future.</p>
+          <a href="#package-selection"><button>Get Started</button></a>
+        </div>
+        
+        <div id="visa-service">
+          <h3>Visa Application</h3>
+          <p>Unlock your global potential: Visa expertise & travel support for work & study abroad.</p>
+          <a href="#package-selection"><button>Get Started</button></a>
+        </div>
+        
+        <div id="tour-service">
+          <h3>Tour Packages</h3>
+          <p>Stress-free escapes, unforgettable experiences and Seamless vacation planning, crafted just for you.</p>
+          <a href="#package-selection"><button>Get Started</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="testimonial-section">
+      <h2>What Others Say</h2>
+      <div id="testimonial-box">
+      <div class="testimonials">
+        <img src="images/image9.jpeg" class="testimonial-img">
+        <p>Testimonial One</p>
+        <h3>- Name</h3>
+      </div>
+      
+      <div class="testimonials">
+        <img src="images/image10.jpeg" class="testimonial-img">
+        <p>Testimonial Two</p>
+        <h3>- Name</h3>
+      </div>
+      
+      <div class="testimonials">
+        <img src="images/image11.jpeg" class="testimonial-img">
+        <p>Testimonial Three</p>
+        <h3>- Name</h3>
+      </div>
+      
+      <div id="dots">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+     </div>
+     </div>
+     
+     
+     <div id="testimonial-box2">
+      <div class="testimonials-2">
+        <img src="images/image9.jpeg" class="testimonial-img">
+        <p>Testimonial One</p>
+        <h3>- Name</h3>
+      </div>
+      
+      <div class="testimonials-2">
+        <img src="images/image10.jpeg" class="testimonial-img">
+        <p>Testimonial Two</p>
+        <h3>- Name</h3>
+      </div>
+      
+      <div class="testimonials-2">
+        <img src="images/image11.jpeg" class="testimonial-img">
+        <p>Testimonial Three</p>
+        <h3>- Name</h3>
+      </div>
+    </div>
+    </div>
+    
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What destinations do you offer?</button>
+      <div class="faq-answer">
+        <p>We offer a wide range of destinations worldwide, including popular spots in Europe, Asia, the Americas, and more.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How can I book a trip?</button>
+      <div class="faq-answer">
+        <p>You can book a trip through our website or by contacting our customer service team directly via phone or email.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What payment methods do you accept?</button>
+      <div class="faq-answer">
+        <p>We accept major credit cards, debit cards, and PayPal. We also offer financing options for eligible customers.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What is your cancellation policy?</button>
+      <div class="faq-answer">
+        <p>Our cancellation policy varies depending on the trip and service provider. Please refer to our terms and conditions or contact us for specific details.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Do you offer travel insurance?</button>
+      <div class="faq-answer">
+        <p>Yes, we offer travel insurance options to protect your trip against unforeseen events. You can add travel insurance during the booking process.</p>
+      </div>
+    </div>
+  </section>
+    
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h2>Company</h2>
+      <a href="pages/about.html"><p>About</p></a>
+      <a href="pages/services.html"><p>Services</p></a>
+    </div>
+    
+    <div class="footer-section">
+      <h2>Help Center</h2>
+      <a href="pages/contact.html"><p>Contact</p></a>
+      <p>Terms of Service</p>
+    </div>
+    
+    <div class="footer-section">
+      <h2>Our Office</h2>
+      <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</p>
+      <p><i class="fas fa-envelope"></i> email@example.com</p>
+      <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
