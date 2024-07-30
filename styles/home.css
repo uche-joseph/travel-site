@@ -532,7 +532,7 @@ header .mobile-menu-icon {
 }
 
 #mobile-nav a {
-    font-size: 25px;
+    font-size: 23px;
 }
 
 #package-selection {
@@ -545,7 +545,7 @@ header .mobile-menu-icon {
 }
 
 #package-selection h2 {
-  font-size: 25px;
+  font-size: 23px;
   margin-bottom: 20px;
 }
 
@@ -555,11 +555,11 @@ header .mobile-menu-icon {
 
 .dropdown-menu li {
   padding: 15px;
-  font-size: 23px;
+  font-size: 21px;
 }
 
 #selected-option {
-  font-size: 23px;
+  font-size: 21px;
 }
 
 #package-selection button {
@@ -577,7 +577,7 @@ header .mobile-menu-icon {
 
 #short-statement p,
 #short-statement ul {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 25px;
 }
 
@@ -602,7 +602,7 @@ header .mobile-menu-icon {
 #education-service p,
 #visa-service p, 
 #tour-service p {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 30px;
 }
 
@@ -626,11 +626,11 @@ header .mobile-menu-icon {
 }
 
 #testimonial-section p {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 #testimonial-section h3 {
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .dot {
@@ -645,6 +645,7 @@ header .mobile-menu-icon {
 
 #faq {
   max-width: 100%;
+  margin-top: 50px;
 }
 
 #faq h2 {
